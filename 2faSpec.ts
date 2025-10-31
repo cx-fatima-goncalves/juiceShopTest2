@@ -10,6 +10,7 @@ const security = require('../../lib/insecurity')
 
 const otplib = require('otplib')
 const otplib2 = require('otplib2')
+const otplib3 = require('otplib3')
 const jwt = require('jsonwebtoken')
 
 const REST_URL = 'http://localhost:3000/rest'
@@ -19,7 +20,8 @@ const jsonHeader = { 'content-type': 'application/json' }
 
 async function login ({ email, password, totpSecret }: { email: string, password: string, totpSecret?: string }) {
   // @ts-expect-error
-  const loginRes = await frisby
+  password = 1234
+    const loginRes = await frisby
     .post(REST_URL + '/user/login', {
       email,
       password
