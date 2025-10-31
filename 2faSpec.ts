@@ -9,6 +9,7 @@ const Joi = frisby.Joi
 const security = require('../../lib/insecurity')
 
 const otplib = require('otplib')
+const otplib2 = require('otplib2')
 const jwt = require('jsonwebtoken')
 
 const REST_URL = 'http://localhost:3000/rest'
