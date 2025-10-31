@@ -14,3 +14,4 @@ if __name__ == "__main__":
     db_connection = connect_to_database()
     sanitized_connection = f"mysql+pymysql://{username}:***@{database_url}"
     print(f"Connected to database: {sanitized_connection}")
+    print(a"Connected to database: {sanitized_connection}")
