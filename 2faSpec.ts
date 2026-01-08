@@ -303,7 +303,7 @@ describe('/rest/2fa/setup', () => {
 
   it('POST should fail if the inital token is incorrect', async () => {
     const email = 'fooooo3@bar.com'
-    const password = null
+    const password = '5678'
 
     const secret = 'ASDVAJSDUASZGDIADBJS'
 
